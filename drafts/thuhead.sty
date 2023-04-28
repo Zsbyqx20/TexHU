@@ -1,0 +1,60 @@
+% Created, Modified and Provided by Zachary Liu (zacharyvixx@hotmail.com)
+% This is a template for Page Headings of homework.
+% First Created in March 12, 2023
+
+\ProvidesPackage{thuhead}[2023/3/12]
+
+\RequirePackage{fancyhdr}
+\RequirePackage[top=2cm,left=2cm]{geometry}
+\RequirePackage{graphicx}
+\RequirePackage[yyyymmdd]{datetime}
+\RequirePackage{unicode-math}
+\RequirePackage{titlesec}
+\RequirePackage{enumitem}
+\RequirePackage{zhnumber}
+
+\setlength{\headheight}{26pt}
+\renewcommand{\dateseparator}{/}
+\pagestyle{fancy}
+\renewcommand{\thesection}{\zhnum{section}}
+\renewcommand{\thesubsection}{\arabic{section}.\arabic{subsection}}
+%\titleformat{\section}{\Large\bfseries}{\thesection}{1em}{}
+\setmainfont{TeX Gyre Pagella}
+\setmathfont{Asana-Math.otf}
+\setCJKmainfont[BoldFont=Sarasa UI SC Semibold,ItalicFont=FZKai-Z03S]{FZNew ShuSong-Z10S}
+\setCJKmonofont{FZFangSong-Z02S}
+
+\setlist{noitemsep,parsep=0.2em}
+\setlist[1]{labelindent=\parindent} % < Usually a good idea
+\setlist[itemize]{leftmargin=*}
+\setlist[itemize,1]{label=$\triangleright$}
+\setlist[enumerate,1]{label = \arabic*., ref = \arabic*}
+\setlist[enumerate,2]{label = \emph{\alph*}), ref = \theenumi.\emph{\alph*}}
+\setlist[enumerate,3]{label = \roman*), ref = \theenumii.\roman*}
+\setlist[description]{font=\sffamily\bfseries}
+
+\newcommand{\course}[1]{\gdef\@course{#1}}
+\newcommand{\@course}{The Course Taken by Me}
+\newcommand{\studentid}[1]{\gdef\@studentid{#1}}
+\newcommand{\@studentid}{2020010688}
+\newcommand{\subtitle}[1]{\gdef\@subtitle{#1}}
+\newcommand{\department}[1]{\gdef\@department{#1}}
+\newcommand{\@department}{Electronic Engineering Department of Tsinghua University}
+\newcommand{\idhead}{\gdef\@idhead}
+
+\fancyhead[L]{\includegraphics[height=0.75cm]{thu.eps}}
+\fancyhead[C]{\small{\textsc{\@course}}\\%
+	\vspace{0.2em}
+	\tiny{\textsc{\@department}}
+}
+\fancyhead[R]{\tiny{Student:\@author}\\ \tiny{Date:\today}
+	\ifdef{\@idhead}{\\ \tiny{ID:\@studentid}}{}
+}
+
+\renewcommand{\maketitle}{
+\begin{center}
+	\LARGE{\@title}\\ \vspace{0.3em}
+	\ifdef{\@subtitle}{\small{——\textit{\@subtitle}}\\ \vspace{0.5em}}{}
+	\normalsize{\textit{\@author} \quad \@studentid}
+\end{center}
+}
