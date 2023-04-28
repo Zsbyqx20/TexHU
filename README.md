@@ -18,15 +18,21 @@
 - These templates are not verified by, affiliated with, or supported by Tsinghua University.
 - Created & Maintained by [Zsbyqx20](https://github.com/Zsbyqx20) and [dmzw20](https://github.com/dmzw20).
 
+## Final Lookings
+(Remained nothing)
+
 ## Current Progress
 - [x] Create github repo.
 - [ ] Finish Chinese `readme.md`.
 - [ ] Extract the basic structure of the `.sty` or `.cls`.
 - [ ] Set several options for the main structure.
+### Problems Remained
+- Any method to integrate custom fonts in the `.sty` or `.cls` (will we just put the fonts in the folder, or some "**prettier**" ways)?
 
 ## Folders Explained
 - **assets**: containing some essential attachments like `png`, `eps`, etc.
 - **drafts**: unstructured code.
+- **test**: put MRE (minimal, reproducible example) `.tex` files.
 
 ## License
 ```
