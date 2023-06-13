@@ -1,0 +1,6 @@
+*.aux
+*.tar.gz
+*.pdf
+*.log
+*.synctex.gz
+temp/**

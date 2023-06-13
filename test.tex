@@ -1,0 +1,15 @@
+\documentclass{article}
+\usepackage{fontspec}
+\usepackage{xeCJK}
+
+% \setCJKmainfont[BoldFont=HYQiHei_80S.ttf, ItalicFont=HYKaiTiS.ttf]{FZFSJW.TTF} % 设置默认字体为宋体
+\newfontfamily\simhei{SimHei} % 定义新的字体系列为SimHei
+
+\begin{document}
+This is some regular text in SimSun.
+中文字体测试。
+
+{\simhei This is some text in SimHei. 中文字体测试。}
+
+Back to regular text in SimSun.中文字体测试。
+\end{document}
