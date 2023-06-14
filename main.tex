@@ -1,55 +1,11 @@
 \documentclass{TexHU}
-\usepackage{lipsum}
-\usepackage{pgfplots}
-\usepackage{adjustbox}
-\usepackage{titlesec}
-\usepackage{xcolor}
-\usepackage{ulem}
-\pgfplotsset{compat=1.18}
 
-\title{\LaTeX\,Test for libertine 中文测试}
-\author{Tester}
-
-% \newcommand{\sectiondivider}{%
-%   \vspace{0.1in}\noindent\makebox[\linewidth]{\dashuline{\hspace{\linewidth}}}%
-% }
-\newcommand{\sectiondivider}{%
-  \vspace{0.1in}
-  \centerline{\dashuline{\hspace{0.4\linewidth}}}
-}
-
-\titleformat{\section}
-  {\normalfont\Large\bfseries}
-  {}
-  {0pt}
-  {\color{black}\rule{\dimexpr\fontcharht\font`X}{\dimexpr\fontcharht\font`X}\quad}
-
+\title{Modern Computer Architecture: Final Project Design}
+\titleZh{现代计算机体系架构：综合课程设计}
+\author{刘国鸿}
 
 \begin{document}
-% \maketitle
-\begin{adjustbox}{width=\textwidth}
-    \begin{minipage}[c]{\linewidth}
-        \begin{tikzpicture}[remember picture, overlay]
-            \draw[line width=0.1in] (0in,-0.5in) -- ++(0, -1in);
-            \node [anchor=north west, align=left, minimum height=1in] at ([xshift=1.25in, yshift=-1.5in]current page.north west) {%
-                \LARGE\textbf{现代计算机体系架构：综合课程设计}\\
-                \large\bfseries\textsc{Modern Computer Architecture: Final Project Design}
-            };
-            \node [anchor=north east] at ([xshift=-0.5in, yshift=-0.5in]current page.north east) {%
-                \includegraphics[height=0.95cm]{assets/thu.eps}
-            };
-            \node [anchor=north west, align=left] at ([xshift=0.5in, yshift=-0.5in]current page.north west) {%
-            \footnotesize \cfs 姓名：刘国鸿 \\
-            \footnotesize \cfs 学号：{\cfsEn 2020010688}
-            };
-            % \node [anchor=north] at ([yshift=-2.75in]current page.north) {%
-            % {\small\cfs 姓名：刘国鸿\hspace{2em}学号：{\cfsEn 2020010688}\hspace{2em}日期：\cfsEn{2023/06/13}}
-            % };
-        \end{tikzpicture}
-        \vspace{2in}
-    \end{minipage}
-\end{adjustbox}
-
+\maketitle
 \section*{实验介绍}
 
 神经网络是目前最热的技术之一。神经网络加速器是为了提高神经网络算法而提出的新型计算单元。与传统的CPU、GPU相比，神经网络加速器可以大幅度提高性能、降低功耗。然而，高效的神经网络加速器通常只支持有限的网络算子，而在完整的神经网络应用中，通常还需要一些其他加速设备对数据进行预处理等其他操作。
@@ -65,13 +21,10 @@ There is roughly a \(50\%\) 中文插入chance.
 
 中文测试。具体测试包括\textbf{粗体}，\textit{斜体}，等等。
 
-\cfs 中文测试 testing for English.
+% \cfs 中文测试 testing for English.
 \[a^2+b^2=c^2=\pi\sqrt[3]{a}\]
 
-\sectiondivider
-
+\sectionDivider
 \section*{实验内容}
-
-
 
 \end{document}
