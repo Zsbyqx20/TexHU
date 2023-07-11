@@ -1,4 +1,4 @@
-\documentclass{TexHU}
+\documentclass[texList,hyper]{TexHU}
 
 \title{Modern Computer Architecture: Final Project Design}
 \titleZh{现代计算机体系架构：综合课程设计}
@@ -6,7 +6,7 @@
 
 \begin{document}
 \maketitle
-\section*{实验介绍}
+\section{实验介绍}\label{sec:01}
 
 神经网络是目前最热的技术之一。神经网络加速器是为了提高神经网络算法而提出的新型计算单元。与传统的CPU、GPU相比，神经网络加速器可以大幅度提高性能、降低功耗。然而，高效的神经网络加速器通常只支持有限的网络算子，而在完整的神经网络应用中，通常还需要一些其他加速设备对数据进行预处理等其他操作。
 
@@ -19,12 +19,21 @@ Let's try some different ligatures, such as !!, !?, \textit{ffl}, ffi.
 
 There is roughly a \(50\%\) 中文插入chance.
 
-中文测试。具体测试包括\textbf{粗体}，\textit{斜体}，等等。
-
 % \cfs 中文测试 testing for English.
 \[a^2+b^2=c^2=\pi\sqrt[3]{a}\]
 
 \sectionDivider
-\section*{实验内容}
+\section{实验内容}
+正如\hyperref[sec:01]{这里}提到，。
+\begin{texList}
+    this is a piece of Python code.
+\end{texList}
 
+
+\begin{figure}
+    \centering
+    \frame{\colorbox{red}{\includegraphics[width=0.8\textwidth]{assets/test.jpg}}}
+    \caption{被剪裁和遮盖的图片}
+  \end{figure}
+  
 \end{document}
